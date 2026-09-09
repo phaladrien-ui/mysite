@@ -1,9 +1,7 @@
-const portraitUrl = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/moi-iGkpyiyYAu9iOM3pUnbicyOQWP9otG.png'
-
 const navItems = [
   ['Work', '#work'],
   ['Writing', '#writing'],
-  ['Open source', '#open-source'],
+  ['Open Source', '#open-source'],
   ['About', '#about'],
   ['CV', '#cv'],
   ['Contact', '#contact'],
@@ -13,58 +11,59 @@ export default function Page() {
   return (
     <main className="site-shell">
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Retour en haut">Phal Adamou</a>
+        <a className="wordmark" href="#top" aria-label="Retour en haut">PHAL ADAMOU</a>
         <nav className="site-nav" aria-label="Navigation principale">
           {navItems.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
         </nav>
       </header>
 
-      <div id="top" className="hero">
+      <section id="top" className="hero" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow">Bonjour, je suis</p>
-          <h1>Phal Adamou.</h1>
-          <p className="lede">Étudiant en mathématiques et informatique, entrepreneur en intelligence artificielle et bâtisseur d&apos;outils qui rendent les systèmes complexes plus accessibles.</p>
+          <p className="eyebrow">PHAL ADAMOU</p>
+          <h1 id="hero-title">Building software that can work.</h1>
+          <p className="lede">AI systems · Autonomous agents · Software</p>
           <div className="social-links" aria-label="Liens sociaux">
             <a href="https://github.com/phaladamou" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
             <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            <a href="https://substack.com" target="_blank" rel="noreferrer">Substack <span>↗</span></a>
           </div>
         </div>
-        <img className="portrait" src={portraitUrl} alt="Portrait de Phal Adamou" />
-      </div>
+        <img className="portrait" src="/moi.png" alt="Portrait de Phal Adamou" />
+      </section>
 
       <section className="notice" aria-labelledby="building-title">
-        <div><p className="section-kicker">Actuellement</p><h2 id="building-title">Je construis Orion Labs.</h2></div>
-        <p>Un laboratoire indépendant dédié à l&apos;intelligence artificielle, aux systèmes agentiques et aux outils utiles pour l&apos;Afrique. <span className="status">En construction</span></p>
+        <div><p className="section-kicker">Currently building</p><h2 id="building-title">Employee</h2></div>
+        <p>Open-source foundation for autonomous AI workers. <span className="status">Building</span></p>
       </section>
 
       <section id="work" className="content-section" aria-labelledby="work-title">
-        <SectionHeading eyebrow="Sélection" title="Work" />
+        <SectionHeading eyebrow="Selected work" title="Work" />
         <div className="work-list">
-          <article className="work-item"><div><h3>Orion Labs</h3><p>Un espace de recherche et de création autour des agents IA, du machine learning et des produits numériques.</p></div><p className="meta">2025 — présent<br /><span>Fondateur</span></p></article>
-          <article className="work-item"><div><h3>IA &amp; Open Data Afrique</h3><p>Exploration d&apos;outils et de plateformes pour mieux relier données ouvertes, éducation et innovation locale.</p></div><p className="meta">En exploration<br /><span>Projet indépendant</span></p></article>
+          <article className="work-item"><div><h3>Employee</h3><p>Open-source foundation for autonomous AI workers.</p></div><p className="meta">Current<br /><span>Building</span></p></article>
+          <article className="work-item"><div><h3>Scientia Labs</h3><p>Scientific AI platform for research, reasoning and scientific computing.</p></div><p className="meta">Past<br /><span>Built · Deployed</span></p></article>
         </div>
       </section>
 
       <section id="writing" className="content-section split-section" aria-labelledby="writing-title">
-        <SectionHeading eyebrow="Notes & idées" title="Writing" />
-        <div className="empty-state"><p>Je prépare une série de notes sur l&apos;IA, les systèmes agentiques et l&apos;apprentissage par la pratique.</p><span>Bientôt disponible</span></div>
+        <SectionHeading eyebrow="Ideas, observations and experiments" title="Writing" />
+        <article className="writing-item"><p className="writing-title">The Software We Build Next Will Not Look Like Software Today</p><p className="meta">September 2026</p><a href="https://substack.com" target="_blank" rel="noreferrer">Read on Substack <span>↗</span></a></article>
       </section>
 
       <section id="open-source" className="content-section split-section" aria-labelledby="open-source-title">
-        <SectionHeading eyebrow="Code public" title="Open source" />
-        <div className="empty-state"><p>Les projets publics et expérimentations seront ajoutés ici au fil de leur publication.</p><span>À venir</span></div>
+        <SectionHeading eyebrow="Code made public" title="Open Source" />
+        <article className="open-source-item"><h3>Employee</h3><p>Open-source foundation for autonomous AI workers.</p><div className="inline-links"><a href="https://github.com/phaladamou" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="#contact">Documentation <span>↗</span></a><a href="#contact">Releases <span>↗</span></a></div></article>
       </section>
 
       <section id="about" className="content-section about-section" aria-labelledby="about-title">
-        <SectionHeading eyebrow="Quelques mots" title="About" />
-        <div className="about-grid"><div><p>Je suis étudiant en Mathématiques et Informatique à l&apos;USTIM de Natitingou. Je m&apos;intéresse à la manière dont les mathématiques, le code et les données peuvent devenir des leviers concrets pour apprendre, créer et résoudre des problèmes réels.</p><p>Mon travail se situe à la rencontre de l&apos;intelligence artificielle, du web et des systèmes agentiques. Je crois aux projets simples à comprendre, solides à construire et utiles au-delà de leur écran.</p></div><dl><div><dt>Formation</dt><dd>Mathématiques &amp; Informatique<br />USTIM Natitingou</dd></div><div><dt>Compétences</dt><dd>IA · ML · systèmes agentiques<br />Web · data · entrepreneuriat</dd></div><div><dt>Engagement</dt><dd>Club IA<br />Fondation Vallet</dd></div></dl></div>
+        <SectionHeading eyebrow="A few words" title="About" />
+        <div className="about-grid"><div><img className="about-portrait" src="/moi.png" alt="Portrait de Phal Adamou" /><p>Phal Adamou</p><p>Building software that can work.</p></div><dl><div><dt>Current focus</dt><dd>AI systems<br />Autonomous agents<br />Software</dd></div><div><dt>Currently</dt><dd>Building Employee.</dd></div><div><dt>Links</dt><dd><a href="https://github.com/phaladamou" target="_blank" rel="noreferrer">GitHub</a><br /><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a><br /><a href="https://substack.com" target="_blank" rel="noreferrer">Substack</a></dd></div></dl></div>
       </section>
 
-      <section id="cv" className="content-section cv-section" aria-labelledby="cv-title"><div><SectionHeading eyebrow="Parcours" title="CV" /><p>Retrouvez bientôt mon parcours, mes expériences et mes projets dans un document à télécharger.</p></div><span className="disabled-link" aria-disabled="true">View CV PDF <span>↗</span></span></section>
+      <section id="cv" className="content-section cv-section" aria-labelledby="cv-title"><div><SectionHeading eyebrow="Curriculum vitae" title="CV" /><p>My current CV is available as a PDF.</p></div><a className="button-link" href="/cv.pdf" target="_blank" rel="noreferrer">View CV PDF <span>↗</span></a></section>
 
-      <section id="contact" className="content-section contact-section" aria-labelledby="contact-title"><SectionHeading eyebrow="Échangeons" title="Contact" /><p>Une idée, une collaboration ou simplement envie de parler de technologie ?</p><div className="contact-links"><a href="https://github.com/phaladamou" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><span className="muted-link">Email — à ajouter</span></div></section>
+      <section id="contact" className="content-section contact-section" aria-labelledby="contact-title"><SectionHeading eyebrow="Get in touch" title="Contact" /><p>For technical discussions, research, collaboration or other opportunities:</p><div className="contact-links"><a href="https://github.com/phaladamou" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://substack.com" target="_blank" rel="noreferrer">Substack <span>↗</span></a></div></section>
 
-      <footer className="site-footer"><span>© 2026 Phal Adamou</span><a href="#top">Retour en haut ↑</a></footer>
+      <footer className="site-footer"><div><strong>PHAL ADAMOU</strong><br /><span>Building software that can work.</span></div><span>© 2026 Phal Adamou</span></footer>
     </main>
   )
 }

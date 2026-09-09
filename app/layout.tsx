@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Phal Adamou — Mathématiques, informatique & IA',
-  description: 'Portfolio personnel de Phal Adamou, étudiant en mathématiques et informatique et entrepreneur en intelligence artificielle.',
+  title: 'Phal Adamou — Building software that can work.',
+  description: 'Personal website of Phal Adamou: AI systems, autonomous agents and software.',
   generator: 'v0.app',
 }
 
